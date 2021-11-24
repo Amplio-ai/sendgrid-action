@@ -5,4 +5,4 @@ set -euo pipefail
 SCRIPT_FILEPATH=${SCRIPT_FILEPATH:=".github/sendgrid.js"}
 
 # Execute the script
-$SCRIPT_FILEPATH
+$SCRIPT_FILEPATH env.ZIP_FILE_NAME
